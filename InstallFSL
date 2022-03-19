@@ -1,0 +1,31 @@
+Last login: Sat Mar 19 13:55:13 on ttys000
+ethandraper@Ethans-MacBook-Air ~ % cd ~/Downloads
+ethandraper@Ethans-MacBook-Air Downloads % python fslinstaller.py
+zsh: command not found: python
+ethandraper@Ethans-MacBook-Air Downloads % which python3
+/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+ethandraper@Ethans-MacBook-Air Downloads % cd /Library/Frameworks/Python.framework/Versions
+ethandraper@Ethans-MacBook-Air Versions % ls
+3.10	Current
+ethandraper@Ethans-MacBook-Air Versions % cd 3.10
+ethandraper@Ethans-MacBook-Air 3.10 % ls
+Headers		Resources	bin		include		share
+Python		_CodeSignature	etc		lib
+ethandraper@Ethans-MacBook-Air 3.10 % cd bin
+ethandraper@Ethans-MacBook-Air bin % ls
+2to3			pip3.10			python3-intel64
+2to3-3.10		pydoc3			python3.10
+idle3			pydoc3.10		python3.10-config
+idle3.10		python3			python3.10-intel64
+pip3			python3-config
+ethandraper@Ethans-MacBook-Air bin % cd python3
+cd: not a directory: python3
+ethandraper@Ethans-MacBook-Air bin % python3 fslinstaller.py
+/Library/Frameworks/Python.framework/Versions/3.10/bin/python3: can't open file '/Library/Frameworks/Python.framework/Versions/3.10/bin/fslinstaller.py': [Errno 2] No such file or directory
+ethandraper@Ethans-MacBook-Air bin % cd ~/Downloads
+ethandraper@Ethans-MacBook-Air Downloads % python3 fslinstaller.py
+  File "/Users/ethandraper/Downloads/fslinstaller.py", line 1364
+    os.chmod(tmpfname, 0755)
+                       ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+ethandraper@Ethans-MacBook-Air Downloads %
