@@ -1,31 +1,15 @@
-Last login: Sat Mar 19 13:55:13 on ttys000
+Last login: Sun Mar 27 20:35:47 on ttys000
 ethandraper@Ethans-MacBook-Air ~ % cd ~/Downloads
+ethandraper@Ethans-MacBook-Air Downloads % ls
+fslinstaller.py
 ethandraper@Ethans-MacBook-Air Downloads % python fslinstaller.py
-zsh: command not found: python
-ethandraper@Ethans-MacBook-Air Downloads % which python3
-/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-ethandraper@Ethans-MacBook-Air Downloads % cd /Library/Frameworks/Python.framework/Versions
-ethandraper@Ethans-MacBook-Air Versions % ls
-3.10	Current
-ethandraper@Ethans-MacBook-Air Versions % cd 3.10
-ethandraper@Ethans-MacBook-Air 3.10 % ls
-Headers		Resources	bin		include		share
-Python		_CodeSignature	etc		lib
-ethandraper@Ethans-MacBook-Air 3.10 % cd bin
-ethandraper@Ethans-MacBook-Air bin % ls
-2to3			pip3.10			python3-intel64
-2to3-3.10		pydoc3			python3.10
-idle3			pydoc3.10		python3.10-config
-idle3.10		python3			python3.10-intel64
-pip3			python3-config
-ethandraper@Ethans-MacBook-Air bin % cd python3
-cd: not a directory: python3
-ethandraper@Ethans-MacBook-Air bin % python3 fslinstaller.py
-/Library/Frameworks/Python.framework/Versions/3.10/bin/python3: can't open file '/Library/Frameworks/Python.framework/Versions/3.10/bin/fslinstaller.py': [Errno 2] No such file or directory
-ethandraper@Ethans-MacBook-Air bin % cd ~/Downloads
-ethandraper@Ethans-MacBook-Air Downloads % python3 fslinstaller.py
-  File "/Users/ethandraper/Downloads/fslinstaller.py", line 1364
-    os.chmod(tmpfname, 0755)
-                       ^
-SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+--- FSL Installer - Version 3.1.0 ---
+[Warning] Some operations of the installer require administative rights,
+    for example installing into the default folder of /usr/local.
+    If your account is an 'Administrator' (you have 'sudo' rights)
+    then you will be prompted for your administrator password
+    when necessary.
+When asked a question, the default answer is given in square brackets.
+Hit the Enter key to accept this default answer.
+[FAILED] [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)
 ethandraper@Ethans-MacBook-Air Downloads %
